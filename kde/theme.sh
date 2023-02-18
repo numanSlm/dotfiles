@@ -1,16 +1,13 @@
 #!/bin/bash
 
-git clone https://github.com/numanSlm/dotfiles.git
-
-
 git clone  https://github.com/vinceliuice/Orchis-kde.git
 cd Orchis-kde
 ./install.sh
 cd ..
 
 git clone  https://github.com/vinceliuice/Orchis-theme.git
-apt install gtk2-engines-murrine -y
-apt install sassc -y
+sudo apt install gtk2-engines-murrine -y
+sudo apt install sassc -y
 cd Orchis-theme
 ./install.sh
 cd ..
@@ -28,4 +25,3 @@ cd ..
 
 git clone  https://github.com/wsdfhjxc/virtual-desktop-bar.git
 cd virtual-desktop-bar
-./install.sh
