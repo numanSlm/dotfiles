@@ -1,9 +1,7 @@
 #!/bin/bash
 
 git clone https://github.com/numanSlm/dotfiles.git
-cd kde
-unzip kde-setup-02.zip
-cd ..
+
 
 git clone  https://github.com/vinceliuice/Orchis-kde.git
 cd Orchis-kde
