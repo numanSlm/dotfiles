@@ -25,16 +25,13 @@ echo 'source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 # ...or wherever you keep your Git repos/Zsh plugins
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
 echo 'source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh' >>~/.zshrc
-
+cp -R ~/.zsh/zsh-autocomplete/ ~/.oh-my-zsh/plugins
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >>~/.zshrc
+cp -R ~/.zsh/zsh-autosuggestions/ ~/.oh-my-zsh/plugins
 
-cd ~
-cd Apps
-cd dotfiles
-
-
+sed -i '1s/^/exec zsh\n/' ~/.bashrc
 
 
 #disc
