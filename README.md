@@ -1,4 +1,20 @@
 # dotfiles
 My personal Dotfiles
 
-gcl --recurse-submodules git@github.com:numanSlm/dotfiles.git
+mkdir ~/Apps
+
+cd ~/Apps
+
+git clone --recurse-submodules git@github.com:numanSlm/dotfiles.git
+
+cd ~/Apps/dotfiles/kde
+
+chmod +x theme.sh
+
+./theme.sh
+
+cd ~/Apps/dotfiles
+
+chmod +x env.sh
+
+./env.sh
